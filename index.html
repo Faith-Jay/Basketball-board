@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left side of the board -->
+    <div class="side">
+        <h3>HOME</h3>
+        <div class="main_score">
+          <p id="home-score" class="score">0</p> 
+        </div>
+        <!-- addition buttons -->
+        <div class="btns">
+            <button onclick="add1home()" class="addition_btns">+1</button>
+            <button onclick="add2home()" class="addition_btns">+2</button>
+            <button onclick="add3home()" class="addition_btns">+3</button>
+        </div>
+    </div>
+    <!-- Right side of the board -->
+    <div class="side">
+        <h3>GUEST</h3>
+        <div class="main_score">
+            <p id="guest-score" class="score">0</p>
+        </div>
+        <!-- addition buttons -->
+        <div class="btns">
+            <button onclick="add1guest()" class="addition_btns">+1</button>
+            <button onclick="add2guest()" class="addition_btns">+2</button>
+            <button onclick="add3guest()" class="addition_btns">+3</button>
+        </div>
+    </div>
+    
+</div> 
+<!-- Reset Button -->
+<div class="reset_btn">
+    <button class="rst-btn" onclick="reset()">Reset</button>
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
